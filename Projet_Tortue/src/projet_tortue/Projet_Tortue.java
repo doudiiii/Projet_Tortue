@@ -19,6 +19,8 @@ public class Projet_Tortue {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Marion");
+        System.out.println("Jennifer");
+        
     }
     
 }
