@@ -1,5 +1,5 @@
 package modele;
-
+import java.util.ArrayList;
 /**
  * Tentative exercice est une classe qui permet a un eleve de faire une tentative d'exercice,
  * qui sera corrige et evalue par le professeur
