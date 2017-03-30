@@ -1,51 +1,84 @@
 package modele;
 
+import static java.lang.System.exit;
+import javax.swing.*;
+
 /**
  * Created by moi on 24/03/2017.
  */
-public class Eleve
+public class Eleve extends Personne
 {
     // instance variables - replace the example below with your own
-    private String prenom;
-    private String nom;
-    private int id;
-    private String sexe;
-    private int age;
-    private Classe maClasse;
-
+    private ImageIcon photoEleve; 
+    private boolean sexeEleve;
+    private int ageEleve;
+    private Classe classeEleve;
+    
     /**
      * Constructor for objects of class Eleve
+     * @param n nom de l'élève
+     * @param p prenom de l'élève
+     * @param age age de l'élève
+     * @param sexe sexe de l'élève
+     * @param icon photographie de l'élève
+     * @param classe classe dans laquelle l'élève appartient 
      */
-    public Eleve(int idE ,String nomE, String prenomE,String sexeE ,int ageE )
+    public Eleve(String n, String p, int age, boolean sexe, ImageIcon icon, Classe classe)
     {
-        id=idE;
-        this.nom=nomE;
-        this.prenom=prenomE;
-        this.sexe=sexeE;
-        this.age=ageE;
+        super(n,p);
+        ageEleve=age;
+        sexeEleve=sexe;
+        photoEleve=icon;
+        classeEleve=classe;
     }
     
-    public void setClasse(Classe cl){
-        this.maClasse=cl;
+    /* 
+     * Permet de retourner l'image d'un élève 
+     */
+    private ImageIcon getPhotoEleve()
+    {
+        return photoEleve;
     }
     
-    public Classe getClasse(){
-        return this.maClasse;
+    /* 
+     * Permet de retourner le sexe d'un élève 
+     */
+    private boolean getSexeEleve()
+    {
+        return sexeEleve;
     }
     
-    public int getIdEleve(){
-        return id;
+     /* 
+     * Permet de retourner l'âge d'un élève 
+     */
+    private int getAgeEleve()
+    {
+        return ageEleve;
+    }   
+    
+    /* 
+     * Permet de modifier l'âge d'un élève 
+     */
+    private void setAgeEleve(int age)
+    {
+        ageEleve= age;
+    }   
+    
+    /* 
+     * Permet de modifier la photo d'un élève 
+     */
+    private void setPhotoEleve(ImageIcon photo)
+    {
+        photoEleve= photo;
     }
-    public String getNomEleve(){
-        return nom;
-    }
-    public String getPrenomEleve(){
-        return prenom;
-    }
-        public int getAgeEleve(){
-        return age;
-    }
-        public String getSexeEleve(){
-        return sexe;
+    
+    /* 
+     * Permet de calculer le nombre de tentatives d'un élève pour un exercice donné
+     * 
+     */   
+    private void calculTentative(){
     }
 }
+
+    
+    
