@@ -41,12 +41,10 @@ public class Classe
     public void addEleve(Eleve eleve){
         this.listEleves.add(eleve);
         eleve.setClasse(this);
-        tailleClasse=tailleClasse+1;
     }
     
     public void deleteEleve(Eleve eleve){
         this.listEleves.remove(eleve);
-        tailleClasse=tailleClasse-1;
     }
 }
 
