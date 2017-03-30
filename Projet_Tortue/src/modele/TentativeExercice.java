@@ -24,9 +24,10 @@ public class TentativeExercice
 	 */
     public TentativeExercice(){
     	this.numeroTentative = 0;
-    	this.suiteAction
-    	this.aCorriger = FALSE;
-    	this.corrige = TRUE;
+    	this.aCorriger = False;
+    	this.corrige = True;
+    	this.evaluation = "";
+    	this.commentaire = "";
     	
     	
     }
