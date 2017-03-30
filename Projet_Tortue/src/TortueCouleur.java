@@ -13,7 +13,7 @@
 public class TortueCouleur extends TortueG {
 
     // Couleurs
-    private static final String lesCouleurs[] = { "black", "red", "blue", "green", "yellow" , "magenta" };
+    private static final String lesCouleurs[] = { "black", "red", "blue", "green", "yellow" , "magenta", };
     
     /**
      * Constructeur par défaut, la tortue écrit en noir
