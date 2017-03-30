@@ -122,7 +122,7 @@ public class TentativeExercice
 	
 	/**
 	 * Ajouter une action
-	 * 
+	 *  
 	 */
 	private addAction(){
 		
