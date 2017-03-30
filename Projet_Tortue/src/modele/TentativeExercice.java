@@ -105,15 +105,15 @@ public class TentativeExercice
 	
 	/**
 	 * Permet d'enlever une action
-	 * Possible que dans le cas o� une action a d�j� �t� faite
+	 * Possible que dans le cas cas ou une action a deja ete faite
 	 */
 	private undoAction(){
 		 
 	}
 	
 	/**
-	 * Permet de refaire la derni�re action
-	 * Possible que dans le cas o� une action viens d'�tre annul�
+	 * Permet de refaire la derniere action
+	 * Possible que dans le cas ou une action viens d'etre annuler
 	 */
 	private redoAction(){
 		
