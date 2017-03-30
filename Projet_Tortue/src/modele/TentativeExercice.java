@@ -22,8 +22,12 @@ public class TentativeExercice
 	 * Constructeur
 	 * 
 	 */
-    public TentativeExercice(int nT, ArrayList<Action> sA, boolean ac, boolean c, String eval, String com){
+    public TentativeExercice(){
     	this.numeroTentative = 0;
+    	this.suiteAction
+    	this.aCorriger = FALSE;
+    	this.corrige = TRUE;
+    	
     	
     }
     
@@ -47,7 +51,7 @@ public class TentativeExercice
 	 * Donner un evalutation pour la tentative
 	 * 
 	 */
-	private String setEvaluation(String e){
+	private void setEvaluation(String e){
     	this.evaluation = e;
     }
     
@@ -63,7 +67,7 @@ public class TentativeExercice
 	 * saisir les commentaires de la tentative
 	 * 
 	 */
-	private String setCommentaire(String c){
+	private void setCommentaire(String c){
 		this.commentaire = c;
 	}
 	
@@ -82,7 +86,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou la tentative est a corriger
 	 * FALSE: dans le cas ou l'exercice n'a pas ete realise ou a ete corrige
 	 */
-	private boolean setACorriger(boolean ac){
+	private void setACorriger(boolean ac){
 		this.aCorriger = ac;
 	}
 	
@@ -91,7 +95,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou l'exercice vient d'etre corrige
 	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
-	private boolean setCorrige(boolean c){
+	private void setCorrige(boolean c){
 		this.corriger = c;
 	}
 	
@@ -108,7 +112,7 @@ public class TentativeExercice
 	 * Permet d'enlever une action
 	 * Possible que dans le cas cas ou une action a deja ete faite
 	 */
-	private undoAction(){
+	private void undoAction(){
 		 
 	}
 	
@@ -116,7 +120,7 @@ public class TentativeExercice
 	 * Permet de refaire la derniere action
 	 * Possible que dans le cas ou une action viens d'etre annuler
 	 */
-	private redoAction(){
+	private void redoAction(){
 		
 	}
 	
@@ -124,7 +128,7 @@ public class TentativeExercice
 	 * Ajouter une action
 	 *  
 	 */
-	private addAction(){
+	private void addAction(){
 		
 	}
 	
@@ -132,7 +136,7 @@ public class TentativeExercice
 	 * permet de visualiser une tentative
 	 * 
 	 */
-	private visualiserTentative(){
+	private void visualiserTentative(){
 		
 	}
 }
