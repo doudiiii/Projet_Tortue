@@ -106,7 +106,7 @@ public class TentativeExercice
 	 * Possible que 
 	 */
 	private undoAction(){
-		
+		 
 	}
 	
 	private redoAction(){
