@@ -1,11 +1,11 @@
 package modele;
 
 /**
- * Tentative exercice est une classe qui permet � un �l�ve de faire une tentative d'exercice,
- * qui sera corrig� et �valu� par le professeur
+ * Tentative exercice est une classe qui permet a un eleve de faire une tentative d'exercice,
+ * qui sera corrige et evalue par le professeur
  *
  * @author Groupe 3
- * @author Armand Devienne - Jennifer Pehau - Marion S�razin - Doriane Suc - Marine Vall�e
+ * @author Armand Devienne - Jennifer Pehau - Marion Serazin - Doriane Suc - Marine Vallee
  * 
  * @version Mars 2017
  */
@@ -43,7 +43,7 @@ public class TentativeExercice
 	    }
 	
 	/**
-	 * Donner un �valutation pour la tentative
+	 * Donner un evalutation pour la tentative
 	 * 
 	 */
 	private String setEvaluation(String e){
@@ -68,7 +68,7 @@ public class TentativeExercice
 	
 	/**
 	 * savoir si la tentative est a corriger
-	 * dans le cas o� la tentative a �t� r�alis� mais pas encore corrig�
+	 * dans le cas ou la tentative a ete realise n'a pas ete encore corrige
 	 * 
 	 */
 	private boolean getACorriger(){
@@ -78,8 +78,8 @@ public class TentativeExercice
 	
 	/**
 	 * permet de changer le booleen
-	 * TRUE : dans le cas ou la tentative est � corriger
-	 * FALSE: dans le cas ou l'exercice n'a pas �t� realis� ou a �t� corrig�
+	 * TRUE : dans le cas ou la tentative est a corriger
+	 * FALSE: dans le cas ou l'exercice n'a pas ete realise ou a ete corrige
 	 */
 	private boolean setACorriger(boolean ac){
 		this.aCorriger = ac;
@@ -87,8 +87,8 @@ public class TentativeExercice
 	
 	/**
 	 * permet de changer le booleen corrige
-	 * TRUE : dans le cas ou l'exercice vient d'�tre corrig�
-	 * FALSE: dans le cas o� l'exercice n'a pas �t� corrige ou qu'il est � corriger
+	 * TRUE : dans le cas ou l'exercice vient d'etre corrige
+	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
 	private boolean setCorrige(boolean c){
 		this.corriger = c;
@@ -96,8 +96,8 @@ public class TentativeExercice
 	
 	/**
 	 * permet de d'obtenir le boolean
-	 * TRUE : dans le cas ou l'exercice vient d'�tre corrig�
-	 * FALSE: dans le cas o� l'exercice n'a pas �t� corrige ou qu'il est � corriger
+	 * TRUE : dans le cas ou l'exercice vient d'etre corrige
+	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
 	private boolean getCorrige(boolean c){
 		return(this.corriger);
