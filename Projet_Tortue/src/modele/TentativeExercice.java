@@ -30,7 +30,7 @@ public class TentativeExercice
     	this.commentaire = "";
     	
     	
-    }
+    } 
     
     /**
 	 * reinitialiser la tentative
