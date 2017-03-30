@@ -29,7 +29,7 @@ public class Action {
     }
 
     /*
-     * permet de realiser une action
+     * permet de faire  une action
      */
-    public void goAction(){}
+    public void doAction(){}
 }
