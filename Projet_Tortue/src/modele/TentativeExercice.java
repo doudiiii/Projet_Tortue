@@ -39,7 +39,7 @@ public class TentativeExercice
 	 * 
 	 */
 	private String getEvaluation(){
-	    	return(this.evaluation)
+	    	return(this.evaluation);
 	    }
 	
 	/**
