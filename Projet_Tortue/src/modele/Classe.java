@@ -11,12 +11,10 @@ import java.util.ArrayList;
 public class Classe 
 {
     // instance variables - replace the example below with your own
-    private  String nom;
-    private String professeur;
     private int id;
+    private  String nom;
     private Eleve eleves;
     private ArrayList<Eleve> listEleves = new ArrayList<Eleve>();
-    private int tailleClasse;
 
     /**
      * Constructor for objects of class Classe
@@ -25,9 +23,7 @@ public class Classe
     {
         id=idC;
         this.nom=nomC;
-        this.professeur=prof;
         //this.listEleves = lE;
-        this.tailleClasse = t;
     }
 
     Classe() {
@@ -37,12 +33,7 @@ public class Classe
     public int getIdClasse(){
         return this.id;
     }
-    public String getNomClasse(){
-        return this.nom;
-    }
-    public String getProf(){
-        return this.professeur;
-    }    
+
     public ArrayList<Eleve> getListEleve(){
         return this.listEleves;
     }
@@ -56,10 +47,6 @@ public class Classe
     public void deleteEleve(Eleve eleve){
         this.listEleves.remove(eleve);
         tailleClasse=tailleClasse-1;
-    }
-
-    public int getSize() {
-        return tailleClasse;
     }
 }
 
