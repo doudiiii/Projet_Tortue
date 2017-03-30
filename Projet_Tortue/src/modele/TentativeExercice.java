@@ -1,3 +1,5 @@
+package modele;
+
 /**
  * Tentative exercice est une classe qui permet ï¿½ un ï¿½lï¿½ve de faire une tentative d'exercice,
  * qui sera corrigï¿½ et ï¿½valuï¿½ par le professeur
@@ -103,15 +105,15 @@ public class TentativeExercice
 	
 	/**
 	 * Permet d'enlever une action
-	 * Possible que dans le cas où une action a déjà été faite
+	 * Possible que dans le cas oï¿½ une action a dï¿½jï¿½ ï¿½tï¿½ faite
 	 */
 	private undoAction(){
 		 
 	}
 	
 	/**
-	 * Permet de refaire la dernière action
-	 * Possible que dans le cas où une action viens d'être annulé
+	 * Permet de refaire la derniï¿½re action
+	 * Possible que dans le cas oï¿½ une action viens d'ï¿½tre annulï¿½
 	 */
 	private redoAction(){
 		
