@@ -28,7 +28,7 @@ public class TentativeExercice
 	 * reinitialiser la tentative
 	 * 
 	 */
-    private reset{
+    private void reset{
     	
     }
     
@@ -36,7 +36,7 @@ public class TentativeExercice
 	 * obtenir l'evaluation pour l'exercice
 	 * 
 	 */
-	private getEvaluation(){
+	private String getEvaluation(){
 	    	return(this.evaluation)
 	    }
 	
@@ -44,15 +44,15 @@ public class TentativeExercice
 	 * Donner un ï¿½valutation pour la tentative
 	 * 
 	 */
-	private setEvaluation(String e){
-    	this.evaluation = e
+	private String setEvaluation(String e){
+    	this.evaluation = e;
     }
     
 	/**
 	 * obtenir les commentaires de la tentative
 	 * 
 	 */
-	private getCommentaire(){
+	private String getCommentaire(){
     	return(this.commentaire);
     }
 	
@@ -60,7 +60,7 @@ public class TentativeExercice
 	 * saisir les commentaires de la tentative
 	 * 
 	 */
-	private setCommentaire(String c){
+	private String setCommentaire(String c){
 		this.commentaire = c;
 	}
 	
@@ -69,7 +69,7 @@ public class TentativeExercice
 	 * dans le cas oï¿½ la tentative a ï¿½tï¿½ rï¿½alisï¿½ mais pas encore corrigï¿½
 	 * 
 	 */
-	private getACorriger(){
+	private boolean getACorriger(){
 		return(this.aCorriger);
 	}
 	
@@ -79,7 +79,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou la tentative est ï¿½ corriger
 	 * FALSE: dans le cas ou l'exercice n'a pas ï¿½tï¿½ realisï¿½ ou a ï¿½tï¿½ corrigï¿½
 	 */
-	private setACorriger(boolean ac){
+	private boolean setACorriger(boolean ac){
 		this.aCorriger = ac;
 	}
 	
@@ -88,7 +88,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou l'exercice vient d'ï¿½tre corrigï¿½
 	 * FALSE: dans le cas oï¿½ l'exercice n'a pas ï¿½tï¿½ corrige ou qu'il est ï¿½ corriger
 	 */
-	private setCorrige(boolean c){
+	private boolean setCorrige(boolean c){
 		this.corriger = c;
 	}
 	
@@ -97,26 +97,38 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou l'exercice vient d'ï¿½tre corrigï¿½
 	 * FALSE: dans le cas oï¿½ l'exercice n'a pas ï¿½tï¿½ corrige ou qu'il est ï¿½ corriger
 	 */
-	private getCorrige(boolean c){
+	private boolean getCorrige(boolean c){
 		return(this.corriger);
 	}
 	
 	/**
 	 * Permet d'enlever une action
-	 * Possible que 
+	 * Possible que dans le cas où une action a déjà été faite
 	 */
 	private undoAction(){
 		 
 	}
 	
+	/**
+	 * Permet de refaire la dernière action
+	 * Possible que dans le cas où une action viens d'être annulé
+	 */
 	private redoAction(){
 		
 	}
 	
+	/**
+	 * Ajouter une action
+	 * 
+	 */
 	private addAction(){
 		
 	}
 	
+	/**
+	 * permet de visualiser une tentative
+	 * 
+	 */
 	private visualiserTentative(){
 		
 	}
