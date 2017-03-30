@@ -12,7 +12,7 @@ package modele;
 public class TentativeExercice
 {
 	private int numeroTentative;
-	private ArrayList<Action> suiteAction;
+	private ArrayList<Action> suiteAction = new ArrayList<Action>();
 	private boolean aCorriger;
 	private boolean corrige;
 	private String evaluation;
@@ -22,7 +22,8 @@ public class TentativeExercice
 	 * Constructeur
 	 * 
 	 */
-    public TentativeExercice{
+    public TentativeExercice(int nT, ArrayList<Action> sA, boolean ac, boolean c, String eval, String com){
+    	this.numeroTentative = 0;
     	
     }
     
@@ -30,7 +31,7 @@ public class TentativeExercice
 	 * reinitialiser la tentative
 	 * 
 	 */
-    private void reset{
+    private void reset(){
     	
     }
     
