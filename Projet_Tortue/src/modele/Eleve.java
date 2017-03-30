@@ -73,6 +73,14 @@ public class Eleve extends Personne
     }
     
     /* 
+     * Permet de modifier la classe de l'élève  
+     */
+    private void setClasseEleve(Classe c)
+    {
+        classeEleve= c;
+    }
+    
+    /* 
      * Permet de calculer le nombre de tentatives d'un élève pour un exercice donné
      * 
      */   
