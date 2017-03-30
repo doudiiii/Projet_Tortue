@@ -42,7 +42,7 @@ public class Classe
     
     public void addEleve(Eleve eleve){
         this.listEleves.add(eleve);
-        eleve.setClasse(this);
+        eleve.setClasseEleve(this);
     }
     
     public void deleteEleve(Eleve eleve){

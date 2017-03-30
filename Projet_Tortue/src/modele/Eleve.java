@@ -75,7 +75,7 @@ public class Eleve extends Personne
     /* 
      * Permet de modifier la classe de l'élève  
      */
-    private void setClasseEleve(Classe c)
+    public void setClasseEleve(Classe c)
     {
         classeEleve= c;
     }

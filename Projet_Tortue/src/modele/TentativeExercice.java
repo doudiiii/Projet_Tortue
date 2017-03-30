@@ -24,8 +24,8 @@ public class TentativeExercice
 	 */
     public TentativeExercice(){
     	this.numeroTentative = 0;
-    	this.aCorriger = False;
-    	this.corrige = True;
+    	this.aCorriger = false;
+    	this.corrige = true;
     	this.evaluation = "";
     	this.commentaire = "";
     	
@@ -97,7 +97,7 @@ public class TentativeExercice
 	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
 	private void setCorrige(boolean c){
-		this.corriger = c;
+		this.corrige = c;
 	}
 	
 	/**
@@ -106,7 +106,7 @@ public class TentativeExercice
 	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
 	private boolean getCorrige(boolean c){
-		return(this.corriger);
+		return(this.corrige);
 	}
 	
 	/**
