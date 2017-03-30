@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 /**
  * Created by moi on 24/03/2017.
+ * Permet la creation de l'objet Classe et permet l'accès via des getters des variables id
+ * Permet l'ajout et la suppression d'un eleve dans une classe
  */
 public class Classe 
 {

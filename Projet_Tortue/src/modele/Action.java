@@ -2,6 +2,8 @@ package modele;
 
 /**
  * Created by moi on 30/03/2017.
+ * Permet la creation de l'objet Action et permet l'accès aux variables codeAction, libelleAction via des getters.
+ * Permet de faire l'action donner
  */
 public class Action {
     private String codeAction;

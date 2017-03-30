@@ -5,16 +5,17 @@ import java.util.Date;
 
 /**
  * Created by moi on 30/03/2017.
+ * permet la creation de l'objet Exercice et permet l'accès au variable via des getters nomExercice, date, ImageE
  */
 public class Exercice {
     private String nomExercice;
     private Date date;
-    private ImageIcon Image;
+    private ImageIcon ImageE;
 
     public Exercice(String nomExercice, Date date, ImageIcon image) {
         this.nomExercice = nomExercice;
         this.date = date;
-        Image = image;
+        ImageE = image;
     }
 
     public String getNomExercice() {
@@ -26,6 +27,6 @@ public class Exercice {
     }
 
     public ImageIcon getImage() {
-        return Image;
+        return ImageE;
     }
 }
