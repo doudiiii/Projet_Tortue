@@ -1,4 +1,5 @@
 import modele.Classe;
+import modele.Database;
 import modele.Eleve;
 
 import javax.swing.*;
@@ -21,7 +22,11 @@ public class Main extends JFrame {
             this.setTitle("Test");
             this.setSize(1200, 800);
             this.setLocationRelativeTo(null);
-            this.setVisible(true); 
+            this.setVisible(true);
+            JLabel L = new JLabel("coucou");
+            //Database.Connexion connexion = new Database.Connexion("Database.db");
+            //connexion.connect();
+            //connexion.close();
     }
 
     public static void main(String[] args){
