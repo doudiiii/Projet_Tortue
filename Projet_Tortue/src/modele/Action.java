@@ -9,29 +9,37 @@ public class Action {
     private String codeAction;
     private String libelleAction;
 
-    public Action(String codeAction, String libelleAction) {
+    public Action(String codeAction, String libelleAction) 
+    {
         this.codeAction = codeAction;
         this.libelleAction = libelleAction;
     }
 
-    public String getCodeAction() {
+    public String getCodeAction() 
+    {
         return codeAction;
     }
 
-    public void setCodeAction(String codeAction) {
+    public void setCodeAction(String codeAction) 
+    {
         this.codeAction = codeAction;
     }
 
-    public String getLibelleAction() {
+    public String getLibelleAction() 
+    {
         return libelleAction;
     }
 
-    public void setLibelleAction(String libelleAction) {
+    public void setLibelleAction(String libelleAction) 
+    {
         this.libelleAction = libelleAction;
     }
 
     /*
      * permet de faire  une action
      */
-    public void doAction(){}
+    public void doAction()
+    {
+    	// Avance, tourne , desssine, ne dessine pas, change la couleur, accélère, ralentis 
+    }
 }
