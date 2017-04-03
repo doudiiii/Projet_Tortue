@@ -1,5 +1,6 @@
 package modele;
 
+import java.util.ArrayList;
 import javax.swing.*;
 import java.util.Date;
 
@@ -36,7 +37,7 @@ public class Exercice {
     }
 
     public ImageIcon getImage() {
-        return ImageE; 
+        return imageE; 
     }
     
     public ArrayList<Classe> getListClasse() {

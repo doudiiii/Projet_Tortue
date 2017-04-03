@@ -31,7 +31,7 @@ public class Eleve extends Personne
         photoEleve=icon;
         classeEleve=classe;
     }
-    public Eleve(){};
+   
     
     /* 
      * Permet de retourner l'image d'un eleve 
@@ -76,7 +76,7 @@ public class Eleve extends Personne
     /* 
      * Permet de retrouner la classe d'un eleve  
      */
-    public void getClasseEleve()
+    public Classe getClasseEleve()
     {
          return classeEleve;
     }
@@ -94,7 +94,7 @@ public class Eleve extends Personne
      * 
      */   
     public void calculTentative(){
-    	// Calculer dans la base de données donc ici requete sql
+    	// Calculer dans la base de donnï¿½es donc ici requete sql
     }
 }
 
