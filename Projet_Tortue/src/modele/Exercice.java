@@ -27,7 +27,7 @@ public class Exercice {
         return nomExercice;
     }
     
-    public int getNumExo() {
+    public int getNumExo() { 
         return numeroExo;
     }
 
