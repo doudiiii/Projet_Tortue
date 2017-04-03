@@ -66,7 +66,7 @@ public class VisualisationResultatEleve extends JFrame {
                     DefaultMutableTreeNode myNode = (DefaultMutableTreeNode) value;
                     if (myNode.getUserObject() instanceof Eleve) {
                         Eleve ele = (Eleve) myNode.getUserObject();
-                        mylabel = new JLabel(ele.Personne.getPrenom());
+                        mylabel = new JLabel(ele.getPrenom()+ " "+ ele.getNom());
                     }else if (myNode.getUserObject() instanceof Classe){
                         Classe cl =(Classe) myNode.getUserObject();
                         mylabel = new JLabel(cl.getClasse());

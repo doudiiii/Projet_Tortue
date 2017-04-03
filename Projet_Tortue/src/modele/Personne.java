@@ -30,7 +30,7 @@ public class Personne {
     /* 
     * Permet de retourner le prénom d'une personne
     */
-    private String getPrenom(){
+    public String getPrenom(){
         return prenom;
     }
 }
