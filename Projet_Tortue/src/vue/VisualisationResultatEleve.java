@@ -5,10 +5,13 @@
  */
 package vue;
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.GridLayout;
 import java.util.ArrayList;
 import javax.swing.*;
+import javax.swing.event.TreeSelectionEvent;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreeCellRenderer;
 import modele.*;
 
 /**
@@ -28,8 +31,8 @@ public class VisualisationResultatEleve extends JFrame {
     
     private JLabel labelNom = new JLabel ("Nom : ");
     private JLabel labelPrenom = new JLabel ("Prenom : ");
-    private JLabel labelNomTree = new JLabel ();
-    private JLabel labelPrenomTree = new JLabel ();
+    private JLabel labelNomTree;
+    private JLabel labelPrenomTree;
     
     private JTable tableResultat = new JTable ();
     
@@ -74,15 +77,31 @@ public class VisualisationResultatEleve extends JFrame {
                 }
             
                 //Creation des panel 
-                return(mylabel);
+                return(mylabel);               
             }
-        
-        
-        
-        
-        
-        
-    }
+          });
+        @Override
+        public void valueChanged(TreeSelectionEvent e) {
+            DefaultMutableTreeNode myNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent();
+            if (myNode.getUserObject() instanceof Eleve) {
+                Eleve ele = (Eleve) myNode.getUserObject();
+                labelPrenomTree = new JLabel (ele.getPrenom());
+                labelNomTree = new JLabel (ele.getNom());            
+                }
+            }
 
+        
+        panelNom.add(labelNom);
+        panelNom.add(labelNomTree);
+        
+        panelPrenom.add(labelPrenom);
+        panelPrenom.add(labelPrenomTree);
+        
+        panelGeneral.add(tree);
+        panelGeneral.add(panelAffichage);
+        this.add(panelGeneral);
+        
+  
+    }
          
 }
