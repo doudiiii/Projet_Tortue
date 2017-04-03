@@ -42,9 +42,9 @@ public class CreationExercice extends JFrame{
     private JButton valider = new JButton ("Valider");
     
     //Creation des tortues sélectionnable 
-    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortue.jpg"), new JLabel ("Tortue Classique"));
-    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortue.jpg"), new JLabel ("Tortue Rapide"));
-    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortue.jpg"), new JLabel ("Tortue Couleur"));
+    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortueClassique.png"), new JLabel ("Tortue Classique"));
+    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortueRapide.png"), new JLabel ("Tortue Rapide"));
+    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon("C:\\Users\\SERAZIN\\Desktop\\IHM_Projet\\tortueCouleur.png"), new JLabel ("Tortue Couleur"));
 
 public CreationExercice(){
     this.setTitle("Creation de l'exercice");
@@ -56,14 +56,15 @@ public CreationExercice(){
     panelMenu.add(menu);
     
      
-    panelTortue2.setLayout(new GridLayout(1,3));
-    panelTortue2.add(tClassique);
-    panelTortue2.add(tRapide);
-    panelTortue2.add(tCouleur);
+    //panelTortue2.setLayout(new GridLayout(1,3));
+    panelTortue2.add(tClassique, BorderLayout.WEST);
+    panelTortue2.add(tRapide, BorderLayout.CENTER);
+    panelTortue2.add(tCouleur, BorderLayout.EAST);
     
-    panelTortue.add(labelTortueDispo, BorderLayout.NORTH);
-    panelTortue.add(panelTortue2, BorderLayout.CENTER); 
-    panelTortue.add(valider, BorderLayout.SOUTH);
+    panelTortue.setLayout(new GridLayout(3,1));
+    panelTortue.add(labelTortueDispo);
+    panelTortue.add(panelTortue2); 
+    panelTortue.add(valider);
     
     panelGeneral.setLayout(new GridLayout(4,1));
     panelGeneral.add(panelMenu);
@@ -78,4 +79,7 @@ public CreationExercice(){
     
     
 }
+public static void main(String[] args){
+        CreationExercice co= new CreationExercice();
+    }
 }
