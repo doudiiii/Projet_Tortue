@@ -33,14 +33,6 @@ public class TentativeExercice
     } 
     
     /**
-	 * reinitialiser la tentative
-	 * 
-	 */
-    private void reset(){
-    	
-    }
-    
-    /**
 	 * obtenir l'evaluation pour l'exercice
 	 * 
 	 */
