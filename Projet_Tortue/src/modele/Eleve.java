@@ -94,6 +94,7 @@ public class Eleve extends Personne
      * 
      */   
     public void calculTentative(){
+    	// Calculer dans la base de données donc ici requete sql
     }
 }
 
