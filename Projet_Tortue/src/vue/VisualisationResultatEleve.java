@@ -7,7 +7,7 @@ package vue;
 
 /**
  *
- * @author Marine prout   
+ * @author Marine 
  */
 public class VisualisationResultatEleve {
          
