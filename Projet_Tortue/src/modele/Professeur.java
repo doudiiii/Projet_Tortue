@@ -30,14 +30,41 @@ public class Professeur extends Personne {
     /* 
     * Permet de retourner le mot de passe d'un professeur
     */
-    private String getMotPasse(){
+    private String getMotPasse()
+    {
         return motPasse;
+    }
+
+    /* 
+    * Permet d'entré le mot de passe du professeur
+    */
+    private String setMotPasse(motDePasse)
+    {
+        this.motPasse = motDePasse;
     }
 
     /* 
     * Permet de retourner le mot de passe d'un professeur
     */
-    private String getIdentifiant(){
+    private String getIdentifiant()
+    {
         return identifiant;
+    }
+    
+    /* 
+    * Permet d'entré l'identifiant du professeur
+    */
+    private String setIdentifiant(id)
+    {
+        this.identifiant = id;
+    }
+
+    
+    private String verifMdpId (mdp, id)
+    {
+    	if mdp != this.motPasse | if id!= this.identifiant 
+    	{
+    		System.out.println ("Mauvais mot de passe ou mauvais identifiant);
+    	}
     }
 }
