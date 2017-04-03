@@ -38,7 +38,7 @@ public class Professeur extends Personne {
     /* 
     * Permet d'entré le mot de passe du professeur
     */
-    private String setMotPasse(String motDePasse)
+    private void setMotPasse(String motDePasse)
     {
         this.motPasse = motDePasse;
     }
@@ -54,17 +54,17 @@ public class Professeur extends Personne {
     /* 
     * Permet d'entré l'identifiant du professeur
     */
-    private String setIdentifiant(String id)
+    private void setIdentifiant(String id)
     {
         this.identifiant = id;
     }
 
     
-    private String verifMdpId (mdp, id)
+    private void verifMdpId (String mdp, String id)
     {
-    	if mdp != this.motPasse | if id!= this.identifiant 
+    	if (mdp != this.motPasse || id!= this.identifiant) 
     	{
-    		System.out.println ("Mauvais mot de passe ou mauvais identifiant);
+    		System.out.println ("Mauvais mot de passe ou mauvais identifiant");
     	}
     }
 }
