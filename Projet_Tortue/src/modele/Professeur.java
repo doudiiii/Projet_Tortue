@@ -38,7 +38,7 @@ public class Professeur extends Personne {
     /* 
     * Permet d'entré le mot de passe du professeur
     */
-    private String setMotPasse(motDePasse)
+    private String setMotPasse(String motDePasse)
     {
         this.motPasse = motDePasse;
     }
@@ -54,7 +54,7 @@ public class Professeur extends Personne {
     /* 
     * Permet d'entré l'identifiant du professeur
     */
-    private String setIdentifiant(id)
+    private String setIdentifiant(String id)
     {
         this.identifiant = id;
     }
