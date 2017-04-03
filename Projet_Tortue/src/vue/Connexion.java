@@ -14,15 +14,15 @@ public class Connexion extends JPanel
 {
     
     JLabel labelIdentification;
-    PanelLabelButton panelEleve; 
-    PanelLabelButton panelProf; 
+    PanelLabelBouton panelEleve; 
+    PanelLabelBouton panelProf; 
     JPanel panelGeneral; 
     
     public Connexion ()
     {
         this.labelIdentification = new JLabel("Veuillez vous identifier :");
-        this.panelProf =  new PanelLabelButton (new ImageIcon("/Users/Jennifer/Desktop/professor.png"), new JLabel ("Professeur"));
-        this.panelEleve =  new PanelLabelButton (new ImageIcon("/Users/Jennifer/Desktop/graduate-boy.png"), new JLabel ("Eleve")); 
+        this.panelProf =  new PanelLabelBouton (new ImageIcon("/Users/Jennifer/Desktop/professor.png"), new JLabel ("Professeur"));
+        this.panelEleve =  new PanelLabelBouton (new ImageIcon("/Users/Jennifer/Desktop/graduate-boy.png"), new JLabel ("Eleve")); 
         panelGeneral.add(panelProf,BorderLayout.WEST); 
         panelGeneral.add(panelEleve,BorderLayout.EAST);
         
