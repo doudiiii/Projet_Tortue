@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package vue;
-import java.awt.BorderLayout;
+import java.awt.*;
 import javax.swing.*;
 /**
  *
@@ -23,10 +23,11 @@ public class PanelLabelBouton extends JPanel
        this.labelBouton = label; 
        this.imageBouton = image; 
        this.bouton = new JButton (imageBouton); 
-       
-       
-       this.add(bouton, BorderLayout.NORTH);
-       this.add(labelBouton, BorderLayout.SOUTH);
+       this.setLayout(new GridLayout(2,1));
+       this.add(bouton);
+       this.add(labelBouton);
+       //this.add(bouton, BorderLayout.NORTH);
+       //this.add(labelBouton, BorderLayout.SOUTH);
        
    }
 }
