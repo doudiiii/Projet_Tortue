@@ -21,6 +21,8 @@ public class PanelLabelBouton extends JPanel
    {
        super();
        this.labelBouton = label; 
+       labelBouton.setHorizontalAlignment(JLabel.CENTER);
+       labelBouton.setVerticalAlignment(JLabel.NORTH);
        this.imageBouton = image; 
        this.bouton = new JButton (imageBouton); 
        this.setLayout(new GridLayout(2,1));
