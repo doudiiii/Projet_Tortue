@@ -32,8 +32,9 @@ public class Eleve extends Personne
         photoEleve=icon;
         classeEleve=classe;
     }
-   
-    
+
+
+
     /* 
      * Permet de retourner l'image d'un eleve 
      */

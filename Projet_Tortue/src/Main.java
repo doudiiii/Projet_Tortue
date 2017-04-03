@@ -21,7 +21,7 @@ public class Main extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         JLabel L = new JLabel("coucou");
-        Database connexion = new Database("C:\\Users\\moi\\Desktop\\Projet_Tortue\\.git\\IHM\\");
+        Database connexion = new Database(".\\ressources\\IHM\\");
         connexion.connect();
 
 

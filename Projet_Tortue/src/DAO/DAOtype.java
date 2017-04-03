@@ -1,10 +1,11 @@
 package DAO;
 
-import java.sql.Connection;
-
 /**
  * Created by moi on 03/04/2017.
  */
+import java.sql.Connection;
+
+
 public abstract class DAOtype<T> {
     protected Connection connect = null;
 
@@ -25,13 +26,6 @@ public abstract class DAOtype<T> {
      * @return boolean
      */
     public abstract boolean delete(T obj);
-
-    /**
-     * Méthode de mise à jour
-     * @param obj
-     * @return boolean
-     */
-    public abstract boolean update(T obj);
 
     /**
      * Méthode de recherche des informations
