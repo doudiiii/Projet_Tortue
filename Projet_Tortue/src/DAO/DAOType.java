@@ -3,6 +3,8 @@ package DAO;
 /**
  * Created by moi on 03/04/2017.
  */
+import modele.Eleve;
+
 import java.sql.Connection;
 
 
@@ -25,13 +27,15 @@ public abstract class DAOtype<T> {
      * @param obj
      * @return boolean
      */
-    public abstract boolean delete(T obj);
+    public abstract void delete(T obj);
 
     /**
      * Méthode de recherche des informations
-     * @param id
+     * @param nom
      * @return T
      */
-    public abstract T find(int id);
+    public abstract T find(String nom);
+
+    public abstract void add(Eleve eleve);
 }
 
