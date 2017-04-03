@@ -28,7 +28,4 @@ public class Connexion extends JPanel
         
         
     }
-
-    
-    
 }

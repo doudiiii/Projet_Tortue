@@ -152,6 +152,7 @@ public class TentativeExercice
                 cptTable+=1;
             }
         }
+        /*
         public void addAction (ArrayList<Action> suiteActions, int cp, ){
             
             if (cptTable < nb d'elt ds ma table'){
@@ -161,7 +162,7 @@ public class TentativeExercice
             cpt++
                    
         }
-        
+        */
 	
 	/**
 	 * permet de visualiser une tentative

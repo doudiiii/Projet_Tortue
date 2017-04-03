@@ -38,5 +38,14 @@ public class Database {
                 e.printStackTrace();
             }
         }
+
+    public Statement createStatement() {
+        try {
+            return connection.createStatement();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
+}
 
