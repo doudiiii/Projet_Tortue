@@ -29,6 +29,10 @@ public class Classe
     Classe() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public String getClasse (){
+        return nom;
+    }
 
     public int getIdClasse(){
         return this.id;
