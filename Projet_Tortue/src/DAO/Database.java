@@ -8,29 +8,27 @@ import java.sql.Statement;
  * Created by moi on 31/03/2017.
  */
 public class Database {
-    public class Connexion {
-        private String DBPath = "Chemin aux base de donnée SQLite";
-        private Connection connection = null;
-        private Statement statement = null;
+    private String DBPath = "C:\\sqlite";
+    private Connection connection = null;
+    private Statement statement = null;
 
-        public Connexion(String dBPath) {
-            DBPath = dBPath;
-        }
+    public Database(String dBPath) {
+        DBPath = dBPath;
+    }
 
-        public void connect() {
-            try {
-                Class.forName("org.sqlite.JDBC");
-                connection = DriverManager.getConnection("jdbc:sqlite:" + DBPath);
-                statement = connection.createStatement();
-                System.out.println("Connexion a " + DBPath + " avec succès");
-            } catch (ClassNotFoundException notFoundException) {
-                notFoundException.printStackTrace();
-                System.out.println("Erreur de connecxion");
-            } catch (SQLException sqlException) {
-                sqlException.printStackTrace();
-                System.out.println("Erreur de connecxion");
-            }
-        }
+    public void connect() {
+        try {
+            Class.forName("org.sqlite.JDBC");
+            connection = DriverManager.getConnection("jdbc:sqlite:" + DBPath);
+            statement = connection.createStatement();
+            System.out.println("Connexion a " + DBPath + " avec succès");
+        } catch (ClassNotFoundException notFoundException) {
+            notFoundException.printStackTrace();
+            System.out.println("Erreur de connexion1");
+        } catch (SQLException sqlException) {
+            sqlException.printStackTrace();
+            System.out.println("Erreur de connexion2");
+        }}
 
         public void close() {
             try {
@@ -41,4 +39,4 @@ public class Database {
             }
         }
     }
-}
+

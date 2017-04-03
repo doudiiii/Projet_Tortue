@@ -23,7 +23,7 @@ public class Personne {
     /* 
     * Permet de retourner le nom d'une personne
     */
-    private String getNom(){
+    public String getNom(){
         return nom;
     }
 

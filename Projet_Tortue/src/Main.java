@@ -1,3 +1,4 @@
+import DAO.Database;
 import modele.Classe;
 
 import javax.swing.*;
@@ -9,23 +10,21 @@ import java.util.ArrayList;
  */
 public class Main extends JFrame {
 
-    private GridLayout Grid = new GridLayout(2,1);
     private JPanel panelGauche = new JPanel();
-    private JPanel panelDroite = new JPanel(Grid);
     private ArrayList<Classe> mesClasses;
 
     public Main()
     {
-        //Mise en charge des données de la BDD
-            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            this.setTitle("Test");
-            this.setSize(1200, 800);
-            this.setLocationRelativeTo(null);
-            this.setVisible(true);
-            JLabel L = new JLabel("coucou");
-            //Database.Connexion connexion = new Database.Connexion("Database.db");
-            //connexion.connect();
-            //connexion.close();
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle("Test");
+        this.setSize(1200, 800);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+        JLabel L = new JLabel("coucou");
+        Database connexion = new Database("C:\\Users\\moi\\Desktop\\Projet_Tortue\\.git\\IHM\\");
+        connexion.connect();
+
+
         //ecrasement de la BDD par les nouvelles donnees
     }
 

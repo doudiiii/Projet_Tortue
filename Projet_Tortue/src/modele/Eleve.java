@@ -13,7 +13,7 @@ public class Eleve extends Personne
     private boolean sexeEleve;
     private int ageEleve;
     private Classe classeEleve;
-    
+
     /**
      * Constructor for objects of class Eleve
      * @param n nom de l'eleve
@@ -23,6 +23,7 @@ public class Eleve extends Personne
      * @param icon photographie de l'eleve
      * @param classe classe dans laquelle l'eleve appartient 
      */
+
     public Eleve(String n, String p, int age, boolean sexe, ImageIcon icon, Classe classe)
     {
         super(n,p);

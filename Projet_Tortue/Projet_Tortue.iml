@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" scope="RUNTIME" name="sqlite-tools-osx-x86-3170000" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.16.1" level="application" />
   </component>
 </module>
