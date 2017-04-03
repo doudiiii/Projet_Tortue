@@ -38,7 +38,7 @@ public class Database {
                 e.printStackTrace();
             }
         }
-
+    //rappel de la fonction car pas un extends connexion
     public Statement createStatement() {
         try {
             return connection.createStatement();
