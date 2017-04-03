@@ -34,12 +34,12 @@ public class Action {
     {
         this.libelleAction = libelleAction;
     }
+}
 
     /*
      * permet de faire  une action
      */
-    public void doAction()
-    {
+   // public void doAction()
+   // {
     	// Avance, tourne , desssine, ne dessine pas, change la couleur, accélère, ralentis 
-    }
-}
+   // }

@@ -17,6 +17,8 @@ public class TentativeExercice
 	private boolean corrige;
 	private String evaluation;
 	private String commentaire;
+        private int cptTable;
+        private boolean undoAble, redoAble;
 	
 	/**
 	 * Constructeur
@@ -28,6 +30,9 @@ public class TentativeExercice
     	this.corrige = true;
     	this.evaluation = "";
     	this.commentaire = "";
+        this.cptTable=0;
+        this.undoAble=false;
+        this.redoAble=false;
     	
     	
     } 
@@ -36,7 +41,7 @@ public class TentativeExercice
 	 * obtenir l'evaluation pour l'exercice
 	 * 
 	 */
-	private String getEvaluation(){
+	public String getEvaluation(){
 	    	return(this.evaluation);
 	    }
 	
@@ -44,7 +49,7 @@ public class TentativeExercice
 	 * Donner un evalutation pour la tentative
 	 * 
 	 */
-	private void setEvaluation(String e){
+	public void setEvaluation(String e){
     	this.evaluation = e;
     }
     
@@ -52,7 +57,7 @@ public class TentativeExercice
 	 * obtenir les commentaires de la tentative
 	 * 
 	 */
-	private String getCommentaire(){
+	public String getCommentaire(){
     	return(this.commentaire);
     }
 	
@@ -60,7 +65,7 @@ public class TentativeExercice
 	 * saisir les commentaires de la tentative
 	 * 
 	 */
-	private void setCommentaire(String c){
+	public void setCommentaire(String c){
 		this.commentaire = c;
 	}
 	
@@ -69,7 +74,7 @@ public class TentativeExercice
 	 * dans le cas ou la tentative a ete realise n'a pas ete encore corrige
 	 * 
 	 */
-	private boolean getACorriger(){
+	public boolean getACorriger(){
 		return(this.aCorriger);
 	}
 	
@@ -79,7 +84,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou la tentative est a corriger
 	 * FALSE: dans le cas ou l'exercice n'a pas ete realise ou a ete corrige
 	 */
-	private void setACorriger(boolean ac){
+	public void setACorriger(boolean ac){
 		this.aCorriger = ac;
 	}
 	
@@ -88,7 +93,7 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou l'exercice vient d'etre corrige
 	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
-	private void setCorrige(boolean c){
+	public void setCorrige(boolean c){
 		this.corrige = c;
 	}
 	
@@ -97,39 +102,72 @@ public class TentativeExercice
 	 * TRUE : dans le cas ou l'exercice vient d'etre corrige
 	 * FALSE: dans le cas ou l'exercice n'a pas ete corrige ou qu'il est a corriger
 	 */
-	private boolean getCorrige(boolean c){
+	public boolean getCorrige(){
 		return(this.corrige);
 	}
 	
-	/**
-	 * Permet d'enlever une action
-	 * Possible que dans le cas cas ou une action a deja ete faite
-	 */
-	private void undoAction(){
-		 
-	}
-	
-	/**
-	 * Permet de refaire la derniere action
-	 * Possible que dans le cas ou une action viens d'etre annuler
-	 */
-	private void redoAction(){
-		
-	}
-	
-	/**
-	 * Ajouter une action
-	 *  
-	 */
-	private void addAction(){
-		
-	}
+        public int getNbAction(){
+            return cptTable;
+        }
+        
+        public int calculeNbaction(ArrayList<Action> suiteActions, int cpaction){
+            for (int i = 0; i<suiteActions.size(); i++)
+            {
+                cpaction+=1;
+            }
+            return cpaction;
+
+        }
+        
+        public void undo ()
+        {
+            cptTable-=1;
+        }
+        
+        
+        public boolean redodispo()
+        {
+            if (cptTable< suiteAction.size())
+            {
+                this.redoAble= true;
+            }
+            return redoAble;
+        }
+        
+        public boolean undoDispo()
+        { 
+            if (cptTable >0)
+            {
+                this.undoAble= true;
+            }
+            return undoAble;
+        }
+        
+               
+        public void redo(ArrayList<Action> suiteActions)
+        {
+            
+            if (cptTable<suiteActions.size())
+            {
+                cptTable+=1;
+            }
+        }
+        public void addAction (ArrayList<Action> suiteActions, int cp, ){
+            
+            if (cptTable < nb d'elt ds ma table'){
+            supprimme leselt qui sont apres cpttable
+        }
+            ajoute l'action'
+            cpt++
+                   
+        }
+        
 	
 	/**
 	 * permet de visualiser une tentative
 	 * 
 	 */
-	private void visualiserTentative(){
+	public void visualiserTentative(){
 		
 	}
 }
