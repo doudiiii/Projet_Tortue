@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package vue;
-import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
@@ -80,15 +78,15 @@ public class VisualisationResultatEleve extends JFrame {
                 return(mylabel);               
             }
           });
-        @Override
-        public void valueChanged(TreeSelectionEvent e) {
-            DefaultMutableTreeNode myNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent();
-            if (myNode.getUserObject() instanceof Eleve) {
-                Eleve ele = (Eleve) myNode.getUserObject();
-                labelPrenomTree = new JLabel (ele.getPrenom());
-                labelNomTree = new JLabel (ele.getNom());            
-                }
-            }
+//        @Override
+//        public void valueChanged(TreeSelectionEvent e) {
+//            DefaultMutableTreeNode myNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent();
+//            if (myNode.getUserObject() instanceof Eleve) {
+//                Eleve ele = (Eleve) myNode.getUserObject();
+//                labelPrenomTree = new JLabel (ele.getPrenom());
+//                labelNomTree = new JLabel (ele.getNom());            
+//                }
+//            }
 
         
         panelNom.add(labelNom);
@@ -103,5 +101,9 @@ public class VisualisationResultatEleve extends JFrame {
         
   
     }
-         
+    
+
+    public static void main(String[] args, ArrayList<Classe> classes){
+        VisualisationResultatEleve co= new VisualisationResultatEleve(classes);
+    }
 }
