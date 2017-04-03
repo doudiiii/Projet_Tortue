@@ -8,7 +8,7 @@ import java.sql.Statement;
  * Created by moi on 31/03/2017.
  */
 public class Database {
-    private String DBPath = "C:\\sqlite";
+    private String DBPath = ".\\sqlite";
     private Connection connection = null;
     private Statement statement = null;
 
