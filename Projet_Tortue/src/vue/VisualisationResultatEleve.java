@@ -7,8 +7,8 @@ package vue;
 
 /**
  *
- * @author Marine
+ * @author Marine prout
  */
 public class VisualisationResultatEleve {
-    
+         
 }
