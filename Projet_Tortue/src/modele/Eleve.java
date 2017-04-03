@@ -33,9 +33,13 @@ public class Eleve extends Personne
         classeEleve=classe;
     }
 
-//    public String getNomE (){
-//        return super.getNom();
-//    }
+    public Eleve(String nom, String eleve_prenom, int eleve_age, boolean eleve_sexe) {
+        super(nom,eleve_prenom);
+    }
+
+    public String getNomE (){
+       return super.getNom();
+   }
 //    
 //        
 //    public String getPrenomE (){
