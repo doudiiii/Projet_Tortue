@@ -36,7 +36,7 @@ public class Exercice {
     }
 
     public ImageIcon getImage() {
-        return ImageE;
+        return ImageE; 
     }
     
     public ArrayList<Classe> getListClasse() {
