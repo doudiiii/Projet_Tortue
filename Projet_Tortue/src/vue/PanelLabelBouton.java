@@ -20,7 +20,10 @@ public class PanelLabelBouton extends JPanel
    public PanelLabelBouton (ImageIcon image, JLabel label)
    {
        super();
+       Font police = new Font("Tahoma", Font.BOLD, 17);
+       
        this.labelBouton = label; 
+       labelBouton.setFont(police);
        labelBouton.setHorizontalAlignment(JLabel.CENTER);
        labelBouton.setVerticalAlignment(JLabel.NORTH);
        this.imageBouton = image; 
