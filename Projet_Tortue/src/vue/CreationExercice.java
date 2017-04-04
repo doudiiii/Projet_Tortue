@@ -49,9 +49,9 @@ public class CreationExercice extends JFrame{
     private JButton valider = new JButton ("Valider");
     
     //Creation des tortues sélectionnable 
-    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon("C:\\Users\\doudi\\Desktop\\TC2.png"), new JLabel ("Tortue Classique"));
-    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon("C:\\Users\\doudi\\Desktop\\TR.png"), new JLabel ("Tortue Rapide"));
-    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon("C:\\Users\\doudi\\Desktop\\TCoul2.png"), new JLabel ("Tortue Couleur"));
+    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Classique"));
+    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Rapide"));
+    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Couleur"));
 
 public CreationExercice(){
     this.setTitle("Creation de l'exercice");
