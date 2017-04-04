@@ -27,14 +27,14 @@ public class VisualisationResultatEleve extends JFrame{
     private JPanel panelNom = new JPanel (new GridLayout(1,2));
     private JPanel panelPrenom = new JPanel (new GridLayout(1,2));
     
-    private JLabel labelNom = new JLabel ("Nom : ");
-    private JLabel labelPrenom = new JLabel ("Prenom : ");
+    private JLabel labelNom;
+    private JLabel labelPrenom ;
     private JLabel labelNomTree;
     private JLabel labelPrenomTree;
     
-    private JTable tableResultat = new JTable ();
+    private Table tableResultat;
     
-    private JTree tree = new JTree();
+    private Tree tree;
     private DefaultMutableTreeNode root = new DefaultMutableTreeNode("Classes");
     
     private ArrayList<Classe> classes;
@@ -59,21 +59,24 @@ public class VisualisationResultatEleve extends JFrame{
     Eleve eleve8 = new Eleve("Saaspanithy", "Babujhi", 9,true,photo1,cm1);        
     Eleve eleve9 = new Eleve("Guillard", "Jonathan", 6,true,photo1,cm2);
     Eleve eleve10 = new Eleve("Zouaoui", "Cyprien",8,true,photo1,cm2);
-   
-    
-
-        
-//            mesClasses = new ArrayList<Classe>();
-//            mesClasses.add(cp);
-//            mesClasses.add(ce1);
-//            mesClasses.add(ce2);
-//            mesClasses.add(cm1);
-//            mesClasses.add(cm2);
-
     
     public VisualisationResultatEleve (){//ArrayList<Classe> classes
        
-      
+        
+        cp.addEleve(eleve1);
+        cp.addEleve(eleve2);
+        cp.addEleve(eleve3);
+        ce1.addEleve(eleve4);
+        ce1.addEleve(eleve5);
+        ce2.addEleve(eleve6);
+        ce2.addEleve(eleve7);
+        cm1.addEleve(eleve8);
+        cm2.addEleve(eleve9);
+        cm2.addEleve(eleve10);
+        
+        
+        
+        classes= new ArrayList<Classe>();
         classes.add(cp);
         classes.add(ce1);
         classes.add(ce2);
@@ -83,56 +86,36 @@ public class VisualisationResultatEleve extends JFrame{
         //Creation du Menu
         this.menu.add(deconnexion);
         this.menu.add(retour);
+               
+        //this.classes= classes;
+        
+//        // Creation de l'arbre avec les eleves
+//        for (Classe classe : classes){
+//            DefaultMutableTreeNode classeNode = new DefaultMutableTreeNode(classe);
+//            for (Eleve eleve : classe.getListEleve()){
+//                    DefaultMutableTreeNode eleveNode = new DefaultMutableTreeNode(eleve);
+//                    classeNode.add(eleveNode);
+//                    }
+//            root.add(classeNode);
+//        }
         
         
-        this.classes= classes;
-        
-        // Creation de l'arbre avec les eleves
-        for (Classe classe : this.classes){
-            DefaultMutableTreeNode classeNode = new DefaultMutableTreeNode(classe);
-            for (Eleve eleve : classe.getListEleve()){
-                    DefaultMutableTreeNode eleveNode = new DefaultMutableTreeNode(eleve);
-                    classeNode.add(eleveNode);
-                    }
-            root.add(classeNode);
-        }
-        tree = new JTree(root);
-        tree.setCellRenderer(new TreeCellRenderer(){
-            @Override
-            public Component getTreeCellRendererComponent(JTree tree, Object value, boolean selected, boolean expanded, boolean leaf, int row, boolean hasFocus) {
-                JLabel mylabel = new JLabel();
-                if (value instanceof DefaultMutableTreeNode) {
-                    DefaultMutableTreeNode myNode = (DefaultMutableTreeNode) value;
-                    if (myNode.getUserObject() instanceof Eleve) {
-                        Eleve ele = (Eleve) myNode.getUserObject();
-                        mylabel = new JLabel(ele.getPrenom()+ " "+ ele.getNom());
-                    }else if (myNode.getUserObject() instanceof Classe){
-                        Classe cl =(Classe) myNode.getUserObject();
-                        mylabel = new JLabel(cl.getClasse());
-                    }
-                }
-            
-                //Creation des panel 
-                return(mylabel);               
-            }
-          });
-//        @Override
-//        public void valueChanged(TreeSelectionEvent e) {
-//            DefaultMutableTreeNode myNode = (DefaultMutableTreeNode)tree.getLastSelectedPathComponent();
-//            if (myNode.getUserObject() instanceof Eleve) {
-//                Eleve ele = (Eleve) myNode.getUserObject();
-//                labelPrenomTree = new JLabel (ele.getPrenom());
-//                labelNomTree = new JLabel (ele.getNom());            
-//                }
-//            }
 
-        
+        labelNom= new JLabel ("Nom : ");
         panelNom.add(labelNom);
+        labelNomTree= new JLabel ("A REMPLIR");
         panelNom.add(labelNomTree);
         
+        labelPrenom = new JLabel ("Prenom : ");
         panelPrenom.add(labelPrenom);
-        panelPrenom.add(labelPrenomTree);
+        //panelPrenom.add(labelPrenomTree);
         
+        panelAffichage.add(panelNom);
+        panelAffichage.add(panelPrenom);
+        tableResultat = new Table ();
+        panelAffichage.add(tableResultat);
+        
+        tree= new Tree(classes,tableResultat);
         panelGeneral.add(tree);
         panelGeneral.add(panelAffichage);
         this.add(panelGeneral);
@@ -141,12 +124,10 @@ public class VisualisationResultatEleve extends JFrame{
         this.pack();
         this.setVisible(true);
         
-  
     }
-public void main(String[] args){
+public static void main(String[] args){
     //Visualisation myFrame = new JFrame();
     //classes = new ArrayList<Classe>();
     VisualisationResultatEleve co= new VisualisationResultatEleve();//classes
 }  
 }
-
