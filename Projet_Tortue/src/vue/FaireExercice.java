@@ -41,6 +41,7 @@ public class FaireExercice extends JFrame {
     JPanel panelLigne13 = new JPanel();
     JPanel affichage = new JPanel();
     JPanel panelCode = new JPanel();
+    
     JPanel panelModele = new JPanel();
     
     //PANEL LABEL BOUTON
