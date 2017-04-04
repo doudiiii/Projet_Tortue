@@ -5,17 +5,20 @@
  */
 package vue;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author Jennifer
  */
-public class testConnexion 
-{
-    /*
+public class testConnexion {
+   /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+   /*
 package vue;
 import java.awt.*;
 import java.net.URL;
@@ -24,9 +27,10 @@ import javax.swing.*;
  *
  * @author Jennifer
  */
+   /*
 public class Connexion extends JFrame
 {
-    
+
     JLabel labelIdentification;
     PanelLabelBouton panelEleve; 
     PanelLabelBouton panelProf; 
@@ -35,7 +39,7 @@ public class Connexion extends JFrame
     
     public Connexion ()
     {
-        
+
         panelBouton = new JPanel();
         panelGeneral = new JPanel();
         //test
@@ -57,7 +61,7 @@ public class Connexion extends JFrame
         this.panelEleve =  new PanelLabelBouton (new ImageIcon ("src/ressources/t2.png"), new JLabel ("Eleve")); 
         
         //panelBouton.setLayout(new GridLayout(1,2));
-        panelBouton.add(panelProf,BorderLayout.WEST); 
+        panelBouton.add(panelProf, BorderLayout.WEST);
         panelBouton.add(panelEleve,BorderLayout.EAST);
         
         //panelGeneral.setLayout(new GridLayout(2,1));
@@ -75,5 +79,5 @@ public class Connexion extends JFrame
         Connexion co= new Connexion();
     }
 }
-    
+    */
 }
