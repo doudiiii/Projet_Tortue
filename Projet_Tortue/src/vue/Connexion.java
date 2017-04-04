@@ -26,8 +26,8 @@ public class Connexion extends JFrame
         panelGeneral = new JPanel();
         this.labelIdentification = new JLabel("Veuillez vous identifier :");
         labelIdentification.setHorizontalAlignment(JLabel.CENTER);
-        this.panelProf =  new PanelLabelBouton (new ImageIcon("C:/Users/doudi/Desktop/t2.png"), new JLabel ("Professeur"));
-        this.panelEleve =  new PanelLabelBouton (new ImageIcon("C:/Users/doudi/Desktop/p2.png"), new JLabel ("Eleve")); 
+        this.panelProf =  new PanelLabelBouton (new ImageIcon("/Users/Jennifer/Desktop/imagesprojet/t2.png"), new JLabel ("Professeur"));
+        this.panelEleve =  new PanelLabelBouton (new ImageIcon("/Users/Jennifer/Desktop/imagesprojet/p2.png"), new JLabel ("Eleve")); 
         
         //panelBouton.setLayout(new GridLayout(1,2));
         panelBouton.add(panelProf,BorderLayout.WEST); 
