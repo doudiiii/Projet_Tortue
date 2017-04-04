@@ -36,7 +36,7 @@ public class TreeListener  {
         DefaultMutableTreeNode myNode = (DefaultMutableTreeNode)treePan.getTree().getLastSelectedPathComponent();
         if (myNode.getUserObject() instanceof Eleve) {
             Eleve e1 = (Eleve) myNode.getUserObject();
-            this.maTable.setData(e1.getNomE());
+            //this.maTable.setData(e1.getNomE());
         }
     } 
     
