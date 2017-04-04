@@ -24,6 +24,7 @@ public class Connexion extends JFrame
         
         panelBouton = new JPanel();
         panelGeneral = new JPanel();
+        //test
         this.labelIdentification = new JLabel("Veuillez vous identifier :");
         labelIdentification.setHorizontalAlignment(JLabel.CENTER);
         this.panelProf =  new PanelLabelBouton (new ImageIcon("/Users/Jennifer/Desktop/imagesprojet/t2.png"), new JLabel ("Professeur"));
