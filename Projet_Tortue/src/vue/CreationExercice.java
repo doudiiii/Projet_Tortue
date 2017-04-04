@@ -69,7 +69,7 @@ public CreationExercice(){
     panelNom.add(entreeNom,BorderLayout.EAST);
     panelDate.add(labelDate,BorderLayout.WEST);
     panelDate.add(entreeDate,BorderLayout.EAST);
-     
+
     //Panel informations de l'exo
     panelInfo.setLayout(new GridLayout(3,1));
     panelInfo.add(labelTitre);

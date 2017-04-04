@@ -11,7 +11,7 @@ import java.sql.Connection;
 public abstract class DAOType<T> {
     protected Connection connect = null;
 
-    public DAOtype(Connection conn){
+    public DAOType(Connection conn){
         this.connect = conn;
     }
 
