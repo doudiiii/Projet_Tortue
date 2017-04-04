@@ -42,6 +42,7 @@ public class InterfaceMenuProf extends JFrame {
         this.setSize(500,200);
         this.setVisible(true);
         this.add(panelBouton);
+        this.setResizable(true); // A garder pour le menu, permet d'adapter la taille de la fenetre a son contenu
     }
     
     public static void main(String[] args){
