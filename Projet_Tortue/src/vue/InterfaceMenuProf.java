@@ -14,7 +14,9 @@ public class InterfaceMenuProf extends JFrame {
     PanelLabelBouton panelEval;
     PanelLabelBouton panelVisu; 
     JPanel panelBouton;
-    JPanel panelGeneral; 
+    JPanel panelGeneral;
+    private JMenuBar menu = new JMenuBar();
+    private JMenu deconnexion = new JMenu("Deconnexion");
     
     public InterfaceMenuProf()
     {
@@ -33,8 +35,8 @@ public class InterfaceMenuProf extends JFrame {
         
         //panelGeneral.add(panelBouton,BorderLayout.NORTH);
         //panelGeneral.add(panelEval,BorderLayout.SOUTH);
-        
-        
+        menu.add(deconnexion);
+        setJMenuBar(menu);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Test");
         this.setSize(500,200);
