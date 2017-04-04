@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package vue;
+import java.awt.*;
 import javax.swing.*;
 
 
@@ -16,6 +17,7 @@ public class FaireExercice extends JFrame {
     JMenu aide = new JMenu("Aide");
     JMenu deconnexion = new JMenu("Deconnexion");
     JMenu retour = new JMenu("Retour");
+    
     JMenuItem undoMenu = new JMenuItem("Undo");
     JMenuItem redoMenu = new JMenuItem("Redo");
     JMenuItem zoomMenu = new JMenuItem("Zoom");
@@ -41,8 +43,9 @@ public class FaireExercice extends JFrame {
     JPanel panelLigne13 = new JPanel();
     JPanel affichage = new JPanel();
     JPanel panelCode = new JPanel();
-    
     JPanel panelModele = new JPanel();
+    JPanel panVitesse = new JPanel();
+    JPanel boutonV = new JPanel();
     
     //PANEL LABEL BOUTON
     PanelLabelBouton undo = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\undo.png"), new JLabel ("Undo"));
@@ -69,10 +72,86 @@ public class FaireExercice extends JFrame {
     
     public FaireExercice(){
         
-        this.setTitle("Menu Eleves");
+        this.setTitle("Exercice");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        fichier.add(zoomMenu);
+        fichier.add(dessinerMenu);
+        fichier.add(nePasDessinerMenu);
+        fichier.add(tournerMenu);
+        fichier.add(avancerMenu);
+        fichier.add(undoMenu);
+        fichier.add(redoMenu);
+        
+        edition.add(bleuMenu);
+        edition.add(vertMenu);
+        edition.add(jauneMenu);
+        edition.add(roseMenu);
+        edition.add(rougeMenu);
+        edition.add(noirMenu);
+        
+        menu.add(fichier);
+        menu.add(edition);
+        menu.add(aide);
+        menu.add(retour);
+        menu.add(deconnexion);
+
+        boutonV.setLayout(new GridLayout(2,1));
+        boutonV.add(haut);
+        boutonV.add(bas);
+        nbCase.setFont(new Font("Arial", Font.PLAIN, 18));
+
+        panVitesse.add(nbCase);
+        panVitesse.add(boutonV);
+        panVitesse.add(nbCaseAffiche);
+
+        //UNDO REDO ZOOM VITESSE
+        panelLigne11.add(undo);
+        panelLigne11.add(redo);
+        panelLigne12.add(zoom);
+        panelLigne13.add(panVitesse);
+        
+        // COULEURS
+        panelLigne2.add(bleu);
+        panelLigne2.add(vert);
+        panelLigne2.add(rouge);
+        panelLigne2.add(rose);
+        panelLigne2.add(jaune);
+        panelLigne2.add(noir);
+        
+        //FONCTIONS DE BASE
+        panelLigne3.add(dessiner);
+        panelLigne3.add(pasDessiner);
+        panelLigne3.add(tourner);
+        panelLigne3.add(avancer);
+        
+        panelLigne1.setLayout(new GridLayout(1,3));
+        panelLigne1.add(panelLigne11);
+        panelLigne1.add(panelLigne12);
+        panelLigne1.add(panelLigne13);
+                
+        panelBouton.setLayout(new GridLayout(3,1));
+        panelBouton.add(panelLigne1);
+        panelBouton.add(panelLigne2);
+        panelBouton.add(panelLigne3);
+        
+        
+        panelGeneral.setLayout(new GridLayout(2,2));
+        panelGeneral.add(affichage);
+        panelGeneral.add(panelCode);
+        panelGeneral.add(panelBouton);
+        panelGeneral.add(panelModele);
+        
+        
+        setJMenuBar(menu);
+        this.setVisible(true);
+        this.add(panelGeneral);
+        this.setSize(1500,800);
+        this.setResizable(true);
+        
     }
-    
+    public static void main(String[] args){
+        FaireExercice FE= new FaireExercice();
+    }
     
 }
