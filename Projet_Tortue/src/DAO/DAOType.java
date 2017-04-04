@@ -8,7 +8,7 @@ import modele.Eleve;
 import java.sql.Connection;
 
 
-public abstract class DAOtype<T> {
+public abstract class DAOType<T> {
     protected Connection connect = null;
 
     public DAOtype(Connection conn){
