@@ -112,7 +112,7 @@ public class VisualisationResultatEleve extends JFrame{
         
         panelAffichage.add(panelNom);
         panelAffichage.add(panelPrenom);
-        tableResultat = new Table ();
+        tableResultat = new Table();
         panelAffichage.add(tableResultat);
         
         tree= new Tree(classes,tableResultat);

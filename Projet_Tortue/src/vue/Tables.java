@@ -19,10 +19,10 @@ import javax.swing.table.AbstractTableModel;
  *
  * @author SERAZIN
  */
-public class Table extends JScrollPane{
+public class Tables extends JScrollPane{
     private JTable table;
     private MyModel modele;
-    public Table(Classe cl){
+    public Tables(Classe cl){
         modele = new MyModel(cl);
         table = new JTable(modele);
         this.add(table);
