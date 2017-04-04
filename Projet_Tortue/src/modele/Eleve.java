@@ -40,11 +40,11 @@ public class Eleve extends Personne
     public String getNomE (){
        return super.getNom();
    }
-//    
-//        
-//    public String getPrenomE (){
-//        return super.getPrenom();
-//    }
+    
+        
+    public String getPrenomE (){
+        return super.getPrenom();
+    }
 
     /* 
      * Permet de retourner l'image d'un eleve 
