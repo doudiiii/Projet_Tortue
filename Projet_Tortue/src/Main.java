@@ -5,6 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
+import vue.VisualisationResultatEleve;
 
 /**
  * Created by moi on 24/03/2017.
@@ -15,6 +16,7 @@ public class Main extends JFrame {
     private JPanel panelGauche = new JPanel();
     private ArrayList<Classe> mesClasses;
 
+
     public Main() throws SQLException {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Test");
@@ -22,6 +24,7 @@ public class Main extends JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
         JLabel L = new JLabel("coucou");
+
         Database connexion = new Database(".\\ressources\\IHM\\");
         connexion.connect();
 
