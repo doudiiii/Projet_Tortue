@@ -31,6 +31,7 @@ public InterfaceMenuEleve()
             menu.add(deconnexion);
             menu.add(retour);
             setJMenuBar(menu);
+            this.setSize(300, 100);
             this.pack();
             this.setVisible(true);
         }
