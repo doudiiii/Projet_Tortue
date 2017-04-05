@@ -31,8 +31,11 @@ public class Main extends JFrame {
        // Statement statement = null;
         ResultSet resultat = null;
         /////////////////////////////////////////
-        System.out.println("Inserting records into the table...");
+
         Statement statement = connexion.createStatement();
+        /*
+        System.out.println("Inserting records into the table...");
+
 
         String sql = "INSERT INTO Eleve " +
                 "VALUES (3,100, 'Vallee', 'Narine', 18,1,'balabal')";
@@ -47,7 +50,7 @@ public class Main extends JFrame {
                 "VALUES(6,103, 'Pepas', 'Jennifire', 28,1,'balabal')";
         statement.executeUpdate(sql);
         System.out.println("Inserted records into the table...");
-
+        */
 
 
 
