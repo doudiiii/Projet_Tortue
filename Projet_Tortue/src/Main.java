@@ -30,8 +30,28 @@ public class Main extends JFrame {
         //connexion = null;
        // Statement statement = null;
         ResultSet resultat = null;
+        /////////////////////////////////////////
+        System.out.println("Inserting records into the table...");
+        Statement statement = connexion.createStatement();
 
-       Statement statement = connexion.createStatement();
+        String sql = "INSERT INTO Eleve " +
+                "VALUES (3,100, 'Vallee', 'Narine', 18,1,'balabal')";
+        statement.executeUpdate(sql);
+        sql = "INSERT INTO Eleve " +
+                "VALUES (4,101, 'Suc', 'Dori-Ane', 25,1,'balabal')";
+        statement.executeUpdate(sql);
+        sql = "INSERT INTO Eleve " +
+                "VALUES (5,102, 'Sarazin', 'Marion', 30,1,'balabal')";
+        statement.executeUpdate(sql);
+        sql = "INSERT INTO Eleve " +
+                "VALUES(6,103, 'Pepas', 'Jennifire', 28,1,'balabal')";
+        statement.executeUpdate(sql);
+        System.out.println("Inserted records into the table...");
+
+
+
+
+    ////////////////////////////////////////
         resultat = statement.executeQuery("SELECT Nom,Prenom  FROM Eleve;");
 
         /* Récupération des données du résultat de la requête de lecture */
