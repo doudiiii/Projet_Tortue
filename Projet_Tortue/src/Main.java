@@ -5,7 +5,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
-import vue.VisualisationResultatEleve;
 
 /**
  * Created by moi on 24/03/2017.

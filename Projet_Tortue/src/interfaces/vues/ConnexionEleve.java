@@ -12,7 +12,7 @@ import javax.swing.*;
  *
  * @author SERAZIN
  */
-public class ConnexionEleve extends JFrame{
+public class ConnexionEleve extends JPanel{
     
     private JMenuBar menu = new JMenuBar();
     private JMenu retour = new JMenu("Retour");
@@ -27,13 +27,14 @@ public class ConnexionEleve extends JFrame{
     private JLabel titre = new JLabel("Choisis ta photographie pour te connecter : ");
     
     public ConnexionEleve(){
+
         Font police = new Font("Tahoma", Font.BOLD, 22);
         titre.setFont(police);
-        this.setTitle("Connexion élèves");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //this.setTitle("Connexion élèves");
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         menu.add(retour);
-        setJMenuBar(menu);
-        
+        //setJMenuBar(menu);
+
         panelGp.setLayout(new GridLayout(1,4));
         panelGp.add(img1);
         panelGp.add(img2);
@@ -43,7 +44,7 @@ public class ConnexionEleve extends JFrame{
         this.add(titre, BorderLayout.NORTH);
         this.add(panelGp, BorderLayout.SOUTH);
         this.setSize(300, 100);
-        this.pack();
+       // this.pack();
         this.setVisible(true);
     }
     public static void main(String[] args){
