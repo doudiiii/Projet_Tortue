@@ -11,7 +11,7 @@ import javax.swing.*;
  *
  * @author doudi
  */
-public class ConnexionProf extends JFrame {
+public class ConnexionProf extends JPanel {
     
     private JLabel labMess = new JLabel("Veuillez remplir les champs pour vous connecter");
     private JLabel labelIdentification = new JLabel("Identifiant : ");
@@ -39,14 +39,14 @@ public class ConnexionProf extends JFrame {
         panelGeneral.add(panelID);//, BorderLayout.NORTH
         panelGeneral.add(connexion, BorderLayout.SOUTH);
         
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("Test");
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //this.setTitle("Test");
         this.setSize(300, 150);
         this.setVisible(true);
         this.add(panelGeneral);
     }
     
-    public static void main(String[] args){
-        ConnexionProf cp = new ConnexionProf();
-    }
+    //public static void main(String[] args){
+     //   ConnexionProf cp = new ConnexionProf();
+  //  }
 }

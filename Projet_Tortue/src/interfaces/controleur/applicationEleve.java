@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interfaces.vues;
+package interfaces.controleur;
 
 /**
  *
  * @author SERAZIN
  */
-public class ClasseVide {
+public class applicationEleve {
     
 }

@@ -5,7 +5,9 @@
  */
 package interfaces.vues;
 import java.awt.*;
+import java.awt.event.ActionListener;
 import javax.swing.*;
+import java.awt.event.ActionEvent;
 /**
  * test
  * @author Jennifer
@@ -34,5 +36,8 @@ public class PanelLabelBouton extends JPanel
        //this.add(bouton, BorderLayout.NORTH);
        //this.add(labelBouton, BorderLayout.SOUTH);
        
+       
+       
    }
+
 }

@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author SERAZIN
  */
 
-public class CreationExercice extends JFrame{
+public class CreationExercice extends JPanel{
     
     //Creation de la barre menu
     private JMenuBar menu = new JMenuBar();
@@ -49,19 +49,19 @@ public class CreationExercice extends JFrame{
     private JButton valider = new JButton ("Valider");
     
     //Creation des tortues sélectionnable 
-    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Classique"));
-    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Rapide"));
-    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\t2.png"), new JLabel ("Tortue Couleur"));
+    private PanelLabelBouton tClassique = new PanelLabelBouton(new ImageIcon("./pictures/TC2.png"), new JLabel ("Tortue Classique"));
+    private PanelLabelBouton tRapide = new PanelLabelBouton(new ImageIcon("./pictures/TR.png"), new JLabel ("Tortue Rapide"));
+    private PanelLabelBouton tCouleur = new PanelLabelBouton(new ImageIcon("./pictures/TCoul2.png"), new JLabel ("Tortue Couleur"));
 
 public CreationExercice(){
-    this.setTitle("Creation de l'exercice");
-    this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    //this.setTitle("Creation de l'exercice");
+    //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     //this.setSize(800, 600);
     
     //ajout des éléments dans la barre des menus 
     menu.add(deconnexion);
     menu.add(retour);
-    setJMenuBar(menu);
+    //setJMenuBar(menu);
     
     entreeNom.setColumns(10);
     entreeDate.setColumns(10);
@@ -101,7 +101,7 @@ public CreationExercice(){
     panelGeneral.add(valider);
     
     this.add(panelGeneral);
-    this.pack();
+    //this.pack();
     this.setVisible(true);
 }
 

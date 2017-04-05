@@ -13,26 +13,26 @@ import javax.swing.*;
  *
  * @author SERAZIN
  */
-public class InterfaceMenuEleve extends JFrame{
+public class InterfaceMenuEleve extends JPanel{
     
     private JMenuBar menu = new JMenuBar();
     private JMenu deconnexion = new JMenu("Deconnexion");
     private JMenu retour = new JMenu("Retour");
-    private PanelLabelBouton img1 = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\exercice.png"), new JLabel ("Exercices"));
-    private PanelLabelBouton img2 = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\resultat.png"), new JLabel ("Résultat"));
+    private PanelLabelBouton img1 = new PanelLabelBouton(new ImageIcon("./pictures/exercice.png"), new JLabel ("Exercices"));
+    private PanelLabelBouton img2 = new PanelLabelBouton(new ImageIcon("./pictures/resultat.png"), new JLabel ("Résultat"));
 
 public InterfaceMenuEleve()
         {
-            this.setTitle("Menu Eleves");
-            this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           // this.setTitle("Menu Eleves");
+            //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.add(img1, BorderLayout.WEST);
             this.add(img2, BorderLayout.EAST);
             
             menu.add(deconnexion);
             menu.add(retour);
-            setJMenuBar(menu);
+          //  setJMenuBar(menu);
             this.setSize(300, 100);
-            this.pack();
+           // this.pack();
             this.setVisible(true);
         }
 public static void main(String[] args){

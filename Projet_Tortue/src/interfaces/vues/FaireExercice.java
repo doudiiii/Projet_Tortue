@@ -8,7 +8,7 @@ import java.awt.*;
 import javax.swing.*;
 
 
-public class FaireExercice extends JFrame {
+public class FaireExercice extends JPanel {
     
     //MENU
     JMenuBar menu = new JMenuBar();
@@ -48,19 +48,19 @@ public class FaireExercice extends JFrame {
     JPanel boutonV = new JPanel();
     
     //PANEL LABEL BOUTON
-    PanelLabelBouton undo = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\undo.png"), new JLabel ("Undo"));
-    PanelLabelBouton redo = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\redo.png"), new JLabel ("Redo"));
-    PanelLabelBouton zoom = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\zoom.png"), new JLabel ("Zoom"));
-    PanelLabelBouton bleu = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\bleu.png"), new JLabel ("Bleu"));
-    PanelLabelBouton rouge = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\rouge.png"), new JLabel ("Rouge"));
-    PanelLabelBouton vert = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\vert.png"), new JLabel ("Vert"));
-    PanelLabelBouton rose = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\rose.png"), new JLabel ("Rose"));
-    PanelLabelBouton jaune = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\jaune.png"), new JLabel ("Jaune"));
-    PanelLabelBouton noir = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\noir.png"), new JLabel ("Noir"));
-    PanelLabelBouton dessiner = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\dessiner.png"), new JLabel ("Dessiner"));
-    PanelLabelBouton pasDessiner = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\nepasdessiner.png"), new JLabel ("Ne pas dessiner"));
-    PanelLabelBouton avancer = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\avancer.png"), new JLabel ("Avancer"));
-    PanelLabelBouton tourner = new PanelLabelBouton(new ImageIcon(".\\ressources\\Image\\tourner.png"), new JLabel ("Tourner"));
+    PanelLabelBouton undo = new PanelLabelBouton(new ImageIcon("./pictures/undo.png"), new JLabel ("Undo"));
+    PanelLabelBouton redo = new PanelLabelBouton(new ImageIcon("./pictures/redo.png"), new JLabel ("Redo"));
+    PanelLabelBouton zoom = new PanelLabelBouton(new ImageIcon("./pictures/zoom.png"), new JLabel ("Zoom"));
+    PanelLabelBouton bleu = new PanelLabelBouton(new ImageIcon("./pictures/bleu.png"), new JLabel ("Bleu"));
+    PanelLabelBouton rouge = new PanelLabelBouton(new ImageIcon("./pictures/rouge.png"), new JLabel ("Rouge"));
+    PanelLabelBouton vert = new PanelLabelBouton(new ImageIcon("./pictures/vert.png"), new JLabel ("Vert"));
+    PanelLabelBouton rose = new PanelLabelBouton(new ImageIcon("./pictures/rose.png"), new JLabel ("Rose"));
+    PanelLabelBouton jaune = new PanelLabelBouton(new ImageIcon("./pictures/jaune.png"), new JLabel ("Jaune"));
+    PanelLabelBouton noir = new PanelLabelBouton(new ImageIcon("./pictures/noir.png"), new JLabel ("Noir"));
+    PanelLabelBouton dessiner = new PanelLabelBouton(new ImageIcon("./pictures/dessiner.png"), new JLabel ("Dessiner"));
+    PanelLabelBouton pasDessiner = new PanelLabelBouton(new ImageIcon("./pictures/nepasdessiner.png"), new JLabel ("Ne pas dessiner"));
+    PanelLabelBouton avancer = new PanelLabelBouton(new ImageIcon("./pictures/avancer.png"), new JLabel ("Avancer"));
+    PanelLabelBouton tourner = new PanelLabelBouton(new ImageIcon("./pictures/tourner.png"), new JLabel ("Tourner"));
     
     // BOUTONS
     JButton haut = new JButton("+");
@@ -72,8 +72,8 @@ public class FaireExercice extends JFrame {
     
     public FaireExercice(){
         
-        this.setTitle("Exercice");
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       // this.setTitle("Exercice");
+        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         fichier.add(zoomMenu);
         fichier.add(dessinerMenu);
@@ -143,11 +143,11 @@ public class FaireExercice extends JFrame {
         panelGeneral.add(panelModele);
         
         
-        setJMenuBar(menu);
+     //   setJMenuBar(menu);
         this.setVisible(true);
         this.add(panelGeneral);
         this.setSize(1500,800);
-        this.setResizable(true);
+       // this.setResizable(true);
         
     }
     public static void main(String[] args){
