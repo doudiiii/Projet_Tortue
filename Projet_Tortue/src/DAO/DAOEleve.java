@@ -1,6 +1,6 @@
 package DAO;
 
-import modele.Eleve;
+import application.eleve.Eleve;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

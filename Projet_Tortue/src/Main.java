@@ -1,5 +1,5 @@
 import DAO.Database;
-import modele.Classe;
+import application.eleve.Classe;
 
 import javax.swing.*;
 import java.awt.*;

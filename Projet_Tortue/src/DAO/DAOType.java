@@ -3,7 +3,7 @@ package DAO;
 /**
  * Created by moi on 03/04/2017.
  */
-import modele.Eleve;
+import application.eleve.Eleve;
 
 import java.sql.Connection;
 
