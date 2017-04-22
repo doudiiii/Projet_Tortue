@@ -42,7 +42,7 @@ public class Connexion extends JFrame implements ActionListener
         this.setSize(400, 250);
         this.setVisible(true);
         this.add(panelGeneral);
-        panelProf.actionPerformed(e);
+       
         
     }
     
