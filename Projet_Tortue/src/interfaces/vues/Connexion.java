@@ -12,7 +12,7 @@ import java.awt.event.ActionEvent;
  *
  * @author Jennifer
  */
-public class Connexion extends JPanel
+public class Connexion extends JFrame implements ActionListener
 {
     
     JLabel labelIdentification;
@@ -39,18 +39,13 @@ public class Connexion extends JPanel
         panelGeneral.add(labelIdentification,BorderLayout.NORTH);
         panelGeneral.add(panelBouton,BorderLayout.SOUTH);
         
-        
-        // Actions sur les panels des boutons 
-        
         this.setSize(400, 250);
         this.setVisible(true);
         this.add(panelGeneral);
+        panelProf.actionPerformed(e);
         
-        
-        
-        
-        //this.setResizable(true);
     }
+    
     public void actionPerformed(ActionEvent e)
     {
         if (e.getSource()==panelProf)
@@ -62,11 +57,4 @@ public class Connexion extends JPanel
             new ConnexionEleve();
         }
     }
-    
-    public static void main(String[] args){
-        Connexion co= new Connexion();
-    }
-    
-    
-
 }

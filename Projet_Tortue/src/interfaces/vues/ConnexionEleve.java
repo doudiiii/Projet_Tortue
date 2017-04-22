@@ -30,10 +30,9 @@ public class ConnexionEleve extends JPanel{
 
         Font police = new Font("Tahoma", Font.BOLD, 22);
         titre.setFont(police);
-        //this.setTitle("Connexion élèves");
-        //this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
         menu.add(retour);
-        //setJMenuBar(menu);
+        
 
         panelGp.setLayout(new GridLayout(1,4));
         panelGp.add(img1);
@@ -47,8 +46,6 @@ public class ConnexionEleve extends JPanel{
         //this.pack();
         this.setVisible(true);
     }
-    public static void main(String[] args){
-        ConnexionEleve co= new ConnexionEleve();
-    }
+    
     
 }

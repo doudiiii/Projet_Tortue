@@ -8,12 +8,9 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-/**
- * test
- * @author Jennifer
- * Test push Jennifer 
- */
-public class PanelLabelBouton extends JPanel
+
+
+public class PanelLabelBouton extends JPanel implements ActionListener
 {
    ImageIcon imageBouton; 
    JButton bouton;
@@ -33,11 +30,22 @@ public class PanelLabelBouton extends JPanel
        this.setLayout(new GridLayout(2,1));
        this.add(bouton);
        this.add(labelBouton);
-       //this.add(bouton, BorderLayout.NORTH);
-       //this.add(labelBouton, BorderLayout.SOUTH);
        
        
        
    }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == bouton)
+        {
+            bouton.addActionListener(this);
+        }
+            
+    }
+
 }
+
+   
+
+

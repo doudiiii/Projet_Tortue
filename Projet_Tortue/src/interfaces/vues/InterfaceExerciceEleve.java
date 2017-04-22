@@ -4,7 +4,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projet_tortue_local;
+package interfaces.vues;
 import javax.swing.*;
 
 public class InterfaceExerciceEleve extends JFrame{
